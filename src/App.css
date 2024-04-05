@@ -1,0 +1,156 @@
+.App {
+  text-align: center;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.NavBar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  color: #fff; /* Change the text color as needed */
+  z-index: 1000; /* Ensure it's above other content */
+  display: flex; /* Change to flex to enable row layout */
+  align-items: center; /* Vertically center items */
+}
+
+.NavBar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* Change to flex to enable row layout */
+}
+
+.NavBar li {
+  display: inline; /* Make list items display inline */
+  margin-right: 10px; /* Add some margin between items */
+}
+
+.NavBar li:first-child {
+  margin-left: 0;
+}
+
+.NavBar button {
+  margin-right: 10px;
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  color: blue; /* Change text color to match link color */
+  text-decoration: underline; /* Add underline to mimic link */
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.NavBar button:hover {
+  text-decoration: none; /* Remove underline on hover */
+  color: darkblue; /* Change text color on hover */
+}
+
+.NavBar a {
+  color: #fff; /* Change the text color as needed */
+  text-decoration: none;
+}
+
+
+.MyName {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  color: #000000; /* Change the text color as needed */
+  z-index: 1000; /* Ensure it's above other content */
+}
+.projects{
+  margin-top: 150px;
+}
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-left: 90px;
+
+}
+
+.project-box{
+  border: 1px solid #ccc; /* Add border */
+  padding: 20px; /* Add padding inside the box */
+  border-radius: 8px; /* Add rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow */
+  width: calc(40% - 20px); 
+ 
+}
+
+.project-list img {
+  max-width: 500px;
+  max-height: 150px;
+  border: 1px solid grey;
+  margin-right: 20px;
+}
+.project-list a {
+  margin: 10px; /* Add margin around each project */
+}
+
+.intro-container {
+  margin: 20px; /* Add margin around the intro box */
+  margin-top: 150px;
+}
+
+.intro-box {
+  border: 1px solid #ccc; /* Add border */
+  padding: 20px; /* Add padding inside the box */
+  border-radius: 8px; /* Add rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow */
+}
+
+.content {
+  display: flex; /* Use flexbox */
+  flex-direction: row; /* Arrange items in a row */
+}
+
+.text {
+  flex: 1; /* Take up remaining space */
+}
+
+.image {
+  margin-left: 20px; /* Add space between text and image */
+}
+
+
+.intro{
+  margin-top: 150px;
+}
+
+
+.about{
+  margin-top: 150px;
+}
+
+.profile-image{
+  max-width: 200px;
+  max-height: 200px;
+  margin-right: 20px;
+  display: flex;
+  
+}
+
+/* Contact.css */
+.social-links {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.social-links li {
+  margin-right: 10px; /* Add some space between icons */
+}
+
+.social-icon {
+  max-width: 75px; /* Set the width of the icons */
+  max-height: 75px; /* Maintain aspect ratio */
+  
+}
+
