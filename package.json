@@ -1,5 +1,6 @@
 {
   "name": "portfolio",
+  "homepage": "https://ZachHuff01.github.io/{portfolio}",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -24,12 +25,13 @@
     "workbox-strategies": "^6.6.0",
     "workbox-streams": "^6.6.0"
   },
-
   "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object":"7.21.11"
+    "@babel/plugin-proposal-private-property-in-object": "7.21.11",
+    "gh-pages": "^6.1.1"
   },
-
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
