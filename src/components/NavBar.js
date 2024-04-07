@@ -30,10 +30,6 @@ const NavBar = () => {
     };
   }, []);
 
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
-
   return (
     <nav className="NavBar">
       <ul>
@@ -55,6 +51,7 @@ const NavBar = () => {
 };
 
 export default NavBar;
+
 
 
 
