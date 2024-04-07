@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 
-
 const NavBar = () => {
   const [activeSection, setActiveSection] = useState('home-section');
 
@@ -17,7 +16,7 @@ const NavBar = () => {
 
     for (let i = sections.length - 1; i >= 0; i--) {
       const section = document.getElementById(sections[i]);
-      if (section.offsetTop <= scrollTop + 100) {
+      if (section && section.offsetTop <= scrollTop + 100) {
         setActiveSection(sections[i]);
         break;
       }
@@ -31,19 +30,23 @@ const NavBar = () => {
     };
   }, []);
 
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
     <nav className="NavBar">
       <ul>
-        <li id="home-section">
+        <li>
           <button className={activeSection === 'home-section' ? 'active' : ''} onClick={() => scrollToSection('home-section')}>Home</button>
         </li>
-        <li id="about-section">
+        <li>
           <button className={activeSection === 'about-section' ? 'active' : ''} onClick={() => scrollToSection('about-section')}>About</button>
         </li>
-        <li id="projects-section">
+        <li>
           <button className={activeSection === 'projects-section' ? 'active' : ''} onClick={() => scrollToSection('projects-section')}>Projects</button>
         </li>
-        <li id="contact-section">
+        <li>
           <button className={activeSection === 'contact-section' ? 'active' : ''} onClick={() => scrollToSection('contact-section')}>Contact</button>
         </li>
       </ul>
@@ -52,5 +55,6 @@ const NavBar = () => {
 };
 
 export default NavBar;
+
 
 
